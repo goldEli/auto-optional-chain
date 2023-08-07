@@ -6,8 +6,10 @@ const engine = new ESLint({
     parser: "@babel/eslint-parser",
     rules: {
       semi: ["error", "never"],
+      "auto-optional-chain": ["error"],
     },
   },
+  rulePaths: [__dirname],
   useEslintrc: false,
 });
 
